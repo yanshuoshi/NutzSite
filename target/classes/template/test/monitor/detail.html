@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-monitor-edit" >
+		<input id="id" name="id"th:value="${monitor.id}"  type="hidden">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createBy" name="createBy"th:text="${monitor.createBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createTime"  name="createTime"th:text="${monitor.createTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateBy" name="updateBy"th:text="${monitor.updateBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateTime"  name="updateTime"th:text="${monitor.updateTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="sysOrgCode" name="sysOrgCode"th:text="${monitor.sysOrgCode}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">设备名称：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorName" name="monitorName"th:text="${monitor.monitorName}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">设备ip地址：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorIp" name="monitorIp"th:text="${monitor.monitorIp}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">服务端口地址：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorPort" name="monitorPort"th:text="${monitor.monitorPort}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">设备类型：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorType" name="monitorType"th:text="${monitor.monitorType}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">nvr频道id：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorChannel" name="monitorChannel"th:text="${monitor.monitorChannel}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">部署的监测点：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="deployCkp" name="deployCkp"th:text="${monitor.deployCkp}"></div>
+			</div>
+		</div>
+		</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+    $(function() {
+
+    });
+</script>
+</body>
+</html>

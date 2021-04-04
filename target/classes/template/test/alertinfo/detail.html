@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-alertinfo-edit" >
+		<input id="id" name="id"th:value="${alertinfo.id}"  type="hidden">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createBy" name="createBy"th:text="${alertinfo.createBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createTime"  name="createTime"th:text="${alertinfo.createTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateBy" name="updateBy"th:text="${alertinfo.updateBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateTime"  name="updateTime"th:text="${alertinfo.updateTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="sysOrgCode" name="sysOrgCode"th:text="${alertinfo.sysOrgCode}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="objId" name="objId"th:text="${alertinfo.objId}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测点：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="ckpId" name="ckpId"th:text="${alertinfo.ckpId}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测设备：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="monitorId" name="monitorId"th:text="${alertinfo.monitorId}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警消息：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertMsg" name="alertMsg"th:text="${alertinfo.alertMsg}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警数值：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertData" name="alertData"th:text="${alertinfo.alertData}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警时点：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertTime"  name="alertTime"th:text="${alertinfo.alertTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">缺陷等级：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="qxLevel" name="qxLevel"th:text="${alertinfo.qxLevel}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">放电类型：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="qxType" name="qxType"th:text="${alertinfo.qxType}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警处理状态：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertStatus" name="alertStatus"th:text="${alertinfo.alertStatus}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警图片信息：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertPic" name="alertPic"th:text="${alertinfo.alertPic}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">告警视频：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="alertVideo" name="alertVideo"th:text="${alertinfo.alertVideo}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">备注说明：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="comment" name="comment"th:text="${alertinfo.comment}"></div>
+			</div>
+		</div>
+		</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+    $(function() {
+
+    });
+</script>
+</body>
+</html>

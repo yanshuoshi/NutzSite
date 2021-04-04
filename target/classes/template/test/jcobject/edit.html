@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-jcobject-edit" >
+		<input id="id" name="id"th:value="${jcobject.id}"  type="hidden">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<input id="createBy" name="createBy"th:value="${jcobject.createBy}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<input id="createTime"  name="createTime"th:value="${jcobject.createTime}" class="form-control time-input" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<input id="updateBy" name="updateBy"th:value="${jcobject.updateBy}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<input id="updateTime"  name="updateTime"th:value="${jcobject.updateTime}" class="form-control time-input" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<input id="sysOrgCode" name="sysOrgCode"th:value="${jcobject.sysOrgCode}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象名称：</label>
+			<div class="col-sm-8">
+				<input id="objectName" name="objectName"th:value="${jcobject.objectName}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象简介：</label>
+			<div class="col-sm-8">
+				<input id="objectDesc" name="objectDesc"th:value="${jcobject.objectDesc}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">设备照片：</label>
+			<div class="col-sm-8">
+				<input id="objectPic" name="objectPic"th:value="${jcobject.objectPic}" class="form-control" type="text">
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象编码：</label>
+			<div class="col-sm-8">
+				<input id="objectCode" name="objectCode"th:value="${jcobject.objectCode}" class="form-control" type="text">
+			</div>
+		</div>
+		</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+	var prefix = ctx + "test/jcobject";
+	$("#form-jcobject-edit").validate({
+		onkeyup: false,
+		rules:{
+			xxxx:{
+				required:true,
+			},
+		}
+	});
+
+	function submitHandler() {
+		if ($.validate.form()) {
+			$.operate.save(prefix + "/editDo", $('#form-jcobject-edit').serialize());
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+2021-03-27 09:28:16,801 - Log4JLogChute initialized using file 'velocity.log'
+2021-03-27 09:28:16,802 - Initializing Velocity, Calling init()...
+2021-03-27 09:28:16,802 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2021-03-27 09:28:16,802 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2021-03-27 09:28:16,802 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2021-03-27 09:28:16,802 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2021-03-27 09:28:16,802 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-03-27 09:28:16,802 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-03-27 09:28:16,808 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,822 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2021-03-27 09:28:16,823 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2021-03-27 09:28:16,825 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2021-03-27 09:28:16,825 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2021-03-27 09:28:16,827 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2021-03-27 09:28:16,827 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2021-03-27 09:28:16,828 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2021-03-27 09:28:16,830 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2021-03-27 09:28:16,831 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2021-03-27 09:28:16,832 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2021-03-27 09:28:16,875 - Created '20' parsers.
+2021-03-27 09:28:16,881 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2021-03-27 09:28:16,882 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2021-03-27 09:28:16,882 - Velocimacro : Default library not found.
+2021-03-27 09:28:16,882 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2021-03-27 09:28:16,882 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2021-03-27 09:28:16,882 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2021-03-27 09:28:16,882 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2021-03-27 09:28:16,964 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,976 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,977 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,979 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,985 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:16,988 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:28:16,995 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:17,000 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:17,005 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:17,008 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:17,010 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,308 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,311 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,311 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,312 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,315 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,316 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:28:49,321 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,324 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,326 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,329 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:28:49,331 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,254 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,255 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,256 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,256 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,257 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,257 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:30:16,259 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,261 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,262 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,264 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:30:16,265 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,137 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,146 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,147 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,147 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,148 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,148 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:32:59,150 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,152 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,155 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,157 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:32:59,159 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,146 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,148 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,149 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,150 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,151 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,151 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:33:09,153 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,155 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,156 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,157 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:09,158 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,683 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,684 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,685 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,686 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,687 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,687 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:33:14,689 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,691 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,692 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,694 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:14,696 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,931 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,933 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,934 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,934 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,935 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,935 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 09:33:22,936 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,937 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,939 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,940 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 09:33:22,941 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,113 - Log4JLogChute initialized using file 'velocity.log'
+2021-03-27 11:35:41,113 - Initializing Velocity, Calling init()...
+2021-03-27 11:35:41,113 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2021-03-27 11:35:41,113 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2021-03-27 11:35:41,113 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2021-03-27 11:35:41,113 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2021-03-27 11:35:41,113 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-03-27 11:35:41,113 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2021-03-27 11:35:41,118 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,135 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2021-03-27 11:35:41,137 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2021-03-27 11:35:41,141 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2021-03-27 11:35:41,142 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2021-03-27 11:35:41,144 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2021-03-27 11:35:41,145 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2021-03-27 11:35:41,147 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2021-03-27 11:35:41,148 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2021-03-27 11:35:41,149 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2021-03-27 11:35:41,150 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2021-03-27 11:35:41,201 - Created '20' parsers.
+2021-03-27 11:35:41,213 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2021-03-27 11:35:41,214 - Could not load resource 'VM_global_library.vm' from ResourceLoader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader: ClasspathResourceLoader Error: cannot find resource VM_global_library.vm
+2021-03-27 11:35:41,214 - Velocimacro : Default library not found.
+2021-03-27 11:35:41,214 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2021-03-27 11:35:41,214 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2021-03-27 11:35:41,214 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2021-03-27 11:35:41,214 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2021-03-27 11:35:41,326 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,341 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,342 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,343 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,349 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,351 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:35:41,359 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,364 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,368 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,371 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:35:41,373 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,953 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,971 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,976 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,977 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,979 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,980 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:37:57,983 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,986 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,989 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,992 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:37:57,995 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,709 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,712 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,712 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,713 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,714 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,714 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:39:53,717 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,719 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,722 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,725 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:53,727 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,341 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,343 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,344 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,345 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,347 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,347 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:39:59,350 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,353 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,355 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,359 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:39:59,363 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,403 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,406 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,408 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,409 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,410 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,411 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:40:04,412 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,415 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,417 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,419 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:04,422 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,814 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,816 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,817 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,818 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,819 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,819 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:40:09,820 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,822 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,825 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,827 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:09,828 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,457 - ResourceManager : found template/vm/java/Models.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,459 - ResourceManager : found template/vm/java/ApiController.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,459 - ResourceManager : found template/vm/java/list/Service.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,460 - ResourceManager : found template/vm/java/list/ServiceImpl.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,460 - ResourceManager : found template/vm/java/list/Controller.java.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,461 - Null reference [template 'template/vm/java/list/Controller.java.vm', line 88, column 68] : ${args[0].id} cannot be resolved.
+2021-03-27 11:40:16,462 - ResourceManager : found template/vm/html/list/list.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,463 - ResourceManager : found template/vm/html/list/add.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,465 - ResourceManager : found template/vm/html/list/edit.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,466 - ResourceManager : found template/vm/html/list/detail.html.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2021-03-27 11:40:16,468 - ResourceManager : found template/vm/sql/sql.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

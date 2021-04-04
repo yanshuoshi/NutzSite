@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-alertinfo-add">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<input id="createBy" name="createBy" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<input id="createTime" name="createTime" class="form-control time-input" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<input id="updateBy" name="updateBy" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<input id="updateTime" name="updateTime" class="form-control time-input" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<input id="sysOrgCode" name="sysOrgCode" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象：</label>
+			<div class="col-sm-8">
+				<input id="objId" name="objId" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测点：</label>
+			<div class="col-sm-8">
+				<input id="ckpId" name="ckpId" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测设备：</label>
+			<div class="col-sm-8">
+				<input id="monitorId" name="monitorId" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警消息：</label>
+			<div class="col-sm-8">
+				<input id="alertMsg" name="alertMsg" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警数值：</label>
+			<div class="col-sm-8">
+				<input id="alertData" name="alertData" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警时点：</label>
+			<div class="col-sm-8">
+				<input id="alertTime" name="alertTime" class="form-control time-input" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">缺陷等级：</label>
+			<div class="col-sm-8">
+				<input id="qxLevel" name="qxLevel" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">放电类型：</label>
+			<div class="col-sm-8">
+				<input id="qxType" name="qxType" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警处理状态：</label>
+			<div class="col-sm-8">
+				<input id="alertStatus" name="alertStatus" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警图片信息：</label>
+			<div class="col-sm-8">
+				<input id="alertPic" name="alertPic" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">告警视频：</label>
+			<div class="col-sm-8">
+				<input id="alertVideo" name="alertVideo" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">备注说明：</label>
+			<div class="col-sm-8">
+				<input id="comment" name="comment" class="form-control" type="text">
+			</div>
+		</div>
+	
+	</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+	var prefix = ctx + "test/alertinfo"
+	$("#form-alertinfo-add").validate({
+		onkeyup: false,
+		rules:{
+			xxxx:{
+				required:true,
+			},
+		}
+	});
+
+	function submitHandler() {
+		if ($.validate.form()) {
+			$.operate.save(prefix + "/addDo", $('#form-alertinfo-add').serialize());
+		}
+	}
+</script>
+</body>
+</html>

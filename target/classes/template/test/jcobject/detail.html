@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-jcobject-edit" >
+		<input id="id" name="id"th:value="${jcobject.id}"  type="hidden">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createBy" name="createBy"th:text="${jcobject.createBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="createTime"  name="createTime"th:text="${jcobject.createTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateBy" name="updateBy"th:text="${jcobject.updateBy}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="updateTime"  name="updateTime"th:text="${jcobject.updateTime}" ></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="sysOrgCode" name="sysOrgCode"th:text="${jcobject.sysOrgCode}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象名称：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="objectName" name="objectName"th:text="${jcobject.objectName}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象简介：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="objectDesc" name="objectDesc"th:text="${jcobject.objectDesc}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">设备照片：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="objectPic" name="objectPic"th:text="${jcobject.objectPic}"></div>
+			</div>
+		</div>
+				<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象编码：</label>
+			<div class="col-sm-8">
+				<div class="form-control-static" id="objectCode" name="objectCode"th:text="${jcobject.objectCode}"></div>
+			</div>
+		</div>
+		</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+    $(function() {
+
+    });
+</script>
+</body>
+</html>

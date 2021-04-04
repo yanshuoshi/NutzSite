@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:max-width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--360浏览器优先以webkit内核解析-->
+    <title>介绍</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../assets/css/bootstrap.min.css" th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.min.css" th:href="@{/assets/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link href="../assets/css/main/animate.min.css" th:href="@{/assets/css/main/animate.min.css}" rel="stylesheet"/>
+    <link href="../assets/css/main/style.min862f.css" th:href="@{/assets/css/main/style.min862f.css}" rel="stylesheet"/>
+ 
+</head>
+
+<body class="gray-bg">
+<div class="row  border-bottom white-bg dashboard-header">
+
+
+    <div class="col-sm-4">
+        <h4>图型测试：</h4>
+        <p>
+        <iframe 
+        	 width="800" height="500" 
+        src="http://49.232.158.170:9999/sources/1/dashboards/6?refresh=Paused&lower=2021-03-03T09%3A00%3A00.000Z&upper=2021-03-03T10%3A30%3A00.000Z&zoomedLower=2021-03-03T09%3A56%3A15.415Z&zoomedUpper=2021-03-03T09%3A57%3A49.579Z&present=true"
+         ></iframe>
+        </p>
+            
+    </div>
+
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+    
+        <div class="col-sm-4">
+
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Grafana 测试</h5>
+                </div>
+                <div class="ibox-content">
+                	<iframe src="http://8.133.190.143/api/grafana/d-solo/34A9emzwqlux/maxhub-mt37-17?refresh=1m&orgId=1&from=1608706940496&to=1616482940496&var-snos=Biamp01937559&panelId=9" width="450" height="200" frameborder="0"></iframe>
+               
+                </div>
+            </div>
+        </div>
+        <!-- 
+       <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>报警列表</h5>
+                </div>
+                <div class="ibox-content no-padding">
+                  
+                   
+                </div>
+            </div>
+        </div> -->
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>设备信息</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="alert alert-warning">
+      
+<!-- 					<video id="video"
+					  class="video-js"
+						    controls
+						    preload="auto"
+						    width="640"
+						    height="264"
+						    data-setup="{}"
+						     src="http://192.168.1.190:8080/dev"
+					></video>
+		 -->
+
+<!-- 						<video id="video"
+								  class="video-js"
+									    controls
+									    preload="auto"
+									    width="640"
+									    height="264"
+									    data-setup="{}"
+									     src="../output.mp4">
+					     </video> -->
+
+<!-- 						 <video
+						    id="my-video"
+						    class="video-js"
+						    controls
+						    preload="auto"
+						    width="640"
+						    height="264"
+						    data-setup="{}"
+						  >
+						  	
+						  </video> -->
+                    </div>
+                    <p id="pay-qrcode">
+                      
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/assets/js/jquery.min.js}"></script>
+<script th:src="@{/assets/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

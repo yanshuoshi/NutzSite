@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.nutz:nutzboot-starter-redis:2.3.8.v20191031">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutzboot-starter-redis/2.3.8.v20191031/nutzboot-starter-redis-2.3.8.v20191031.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutzboot-starter-redis/2.3.8.v20191031/nutzboot-starter-redis-2.3.8.v20191031-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutzboot-starter-redis/2.3.8.v20191031/nutzboot-starter-redis-2.3.8.v20191031-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

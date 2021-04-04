@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+	<form class="form-horizontal m" id="form-jcobject-add">
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建人：</label>
+			<div class="col-sm-8">
+				<input id="createBy" name="createBy" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">创建日期：</label>
+			<div class="col-sm-8">
+				<input id="createTime" name="createTime" class="form-control time-input" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">更新人：</label>
+			<div class="col-sm-8">
+				<input id="updateBy" name="updateBy" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">更新日期：</label>
+			<div class="col-sm-8">
+				<input id="updateTime" name="updateTime" class="form-control time-input" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">所属部门：</label>
+			<div class="col-sm-8">
+				<input id="sysOrgCode" name="sysOrgCode" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象名称：</label>
+			<div class="col-sm-8">
+				<input id="objectName" name="objectName" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象简介：</label>
+			<div class="col-sm-8">
+				<input id="objectDesc" name="objectDesc" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">设备照片：</label>
+			<div class="col-sm-8">
+				<input id="objectPic" name="objectPic" class="form-control" type="text">
+			</div>
+		</div>
+	
+			<div class="form-group">
+			<label class="col-sm-3 control-label">监测对象编码：</label>
+			<div class="col-sm-8">
+				<input id="objectCode" name="objectCode" class="form-control" type="text">
+			</div>
+		</div>
+	
+	</form>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript">
+	var prefix = ctx + "test/jcobject"
+	$("#form-jcobject-add").validate({
+		onkeyup: false,
+		rules:{
+			xxxx:{
+				required:true,
+			},
+		}
+	});
+
+	function submitHandler() {
+		if ($.validate.form()) {
+			$.operate.save(prefix + "/addDo", $('#form-jcobject-add').serialize());
+		}
+	}
+</script>
+</body>
+</html>

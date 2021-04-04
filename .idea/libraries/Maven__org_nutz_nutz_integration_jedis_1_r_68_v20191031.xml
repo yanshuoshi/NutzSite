@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.nutz:nutz-integration-jedis:1.r.68.v20191031">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-integration-jedis/1.r.68.v20191031/nutz-integration-jedis-1.r.68.v20191031.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-integration-jedis/1.r.68.v20191031/nutz-integration-jedis-1.r.68.v20191031-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nutz/nutz-integration-jedis/1.r.68.v20191031/nutz-integration-jedis-1.r.68.v20191031-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
