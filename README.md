@@ -94,6 +94,15 @@ mvn clean package nutzboot:shade nutzboot:war
 
 请注意,当前需要package + nutzboot:shade, 单独执行package或者nutzboot:shade是不行的
 
+### 跳过测试打包
+```
+mvn clean package nutzboot:shade -Dmaven.test.skip=true
+```
+### 项目启动
+```
+nohup java -Dlog4j.configurationFile=/home/nutzsite/manage/log4j2.xml -Dnutz.boot.configure.properties.dir=/home/nutzsite/manage -jar /home/nutzsite/nutzsite-1.0-SNAPSHOT.jar >/dev/null 2>&1 &
+
+
 ## 相关资源
 
 * 论坛: https://nutz.cn

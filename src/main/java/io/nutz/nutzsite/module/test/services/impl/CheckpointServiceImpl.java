@@ -34,8 +34,8 @@ public class CheckpointServiceImpl extends BaseServiceImpl<Checkpoint> implement
                 "ON j.id = c.obj_id " +
                 "left join zw_checkpoint_url  cu " +
                 "on cu.checkpoint_id = c.id " +
-                "where j.id = @id" +
-                " group by c.id desc" ;
+                "where j.id = @id";
+//                " group by c.id desc" ;
         Sql sql = Sqls.create(sqlstr);
         sql.params().set("id", id);
         sql.setCallback(Sqls.callback.maps());
