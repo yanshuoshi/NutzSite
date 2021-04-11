@@ -13,7 +13,7 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row" style="display: flex">
-            <div
+            <div id="img1"
                   class="image"
                   style="
                 background-image: url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3434172617,1892091027&fm=26&gp=0.jpg');
@@ -22,7 +22,7 @@
               "
           ></div>
             <div class="a-content">
-              <div class="a-title">
+              <div class="a-title" style="font-size:15px;">
               </div>
             </div>
           </div>
@@ -51,11 +51,11 @@
                   "
                 ></div>
                 <div style="flex-grow: 1; padding: 0 24px">
-                  <a href="#">
+                  <!--<a href="#">-->
                     <p class="title" id="p1">
 
                     </p>
-                  </a>
+                  <!--</a>-->
                 </div>
               </div>
             </div>
@@ -82,10 +82,10 @@
                   "
                 ></div>
                 <div style="flex-grow: 1; padding: 0 24px">
-                  <a href="#">
+                  <!--<a href="#">-->
                     <p class="title" id="p2">
                     </p>
-                  </a>
+                  <!--</a>-->
                 </div>
               </div>
             </div>
@@ -114,10 +114,10 @@
                   "
                 ></div>
                 <div style="flex-grow: 1; padding: 0 24px">
-                  <a href="#">
+                  <!--<a href="#">-->
                     <p class="title" id="p3">
                     </p>
-                  </a>
+                  <!--</a>-->
                 </div>
               </div>
             </div>
@@ -144,10 +144,10 @@
                   "
                 ></div>
                 <div style="flex-grow: 1; padding: 0 24px">
-                  <a href="#">
+                  <!--<a href="#">-->
                     <p class="title" id="p4">
                     </p>
-                  </a>
+                  <!--</a>-->
                 </div>
               </div>
             </div>
@@ -164,14 +164,15 @@
         $(function() {
             var prefix = ctx + "test/checkpoint/home";
             var data = 'id=1373622987708981249';
-            // console.log('1111111111111111111111111');
+            // console.log("---------" + );
             var config = {
                 url: prefix,
                 type: 'GET',
                 dataType: 'json',
                 data: data,
                 success: function(res) {
-                    $('.a-title').append('监测对象名称：' + res.rows[0].objectName);
+                    $('.a-title').append('监测对象名称：' + res.rows[0].objectName + '<br/>' + '监测对象简介：' + res.rows[0].objectDesc);
+                    $('#img1').css("background-image", "url(http://qyj.ln1.top:8080/img/" + res.rows[0].objectPic + ")");
                     $('#p1').append('监测点名称：' + res.rows[0].ckpName + '<br/> 监测点描述：' + res.rows[0].ckpDesc)
                     $('#p2').append('监测点名称：' + res.rows[1].ckpName + '<br/> 监测点描述：' + res.rows[1].ckpDesc)
                     $('#p3').append('监测点名称：' + res.rows[2].ckpName + '<br/> 监测点描述：' + res.rows[2].ckpDesc)
@@ -184,6 +185,8 @@
             };
             $.ajax(config)
         });
+
+
     </script>
   </body>
   <style>
@@ -227,9 +230,9 @@
       align-items: center;
       justify-content: center;
     }
-    .left-img:hover::before {
-      opacity: 1;
-    }
+    /*.left-img:hover::before {*/
+      /*opacity: 1;*/
+    /*}*/
     .left-img:before {
       font-family: "Glyphicons Halflings";
       content: "\e029";

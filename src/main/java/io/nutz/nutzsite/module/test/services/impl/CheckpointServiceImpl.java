@@ -27,7 +27,7 @@ public class CheckpointServiceImpl extends BaseServiceImpl<Checkpoint> implement
     @Override
     public Object home(String id) {
         String sqlstr = " SELECT " +
-                "  c.id checkpointId,c.ckp_name ckpName,c.ckp_desc ckpDesc,j.`object_name` objectName,ifnull(cu.pic_url,'') picUrl " +
+                "  c.id checkpointId,c.ckp_name ckpName,c.ckp_desc ckpDesc,j.`object_name` objectName,j.object_desc objectDesc,j.object_pic objectPic,ifnull(cu.pic_url,'') picUrl " +
                 "FROM" +
                 "  zw_checkpoint c" +
                 "  LEFT JOIN zw_jcobject j " +
