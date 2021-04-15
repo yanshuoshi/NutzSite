@@ -158,4 +158,11 @@ public class CheckpointController {
         return checkpointService.home(id);
     }
 
+    @At
+    @Ok("json")
+    public Object number(@Param("id")String id,HttpServletRequest req) {
+        return checkpointService.number(id);
+    }
+
+
 }

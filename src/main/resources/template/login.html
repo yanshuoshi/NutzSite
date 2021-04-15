@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>NutzSite管理系统</title>
+    <title>欢迎来到管理系统</title>
     <meta name="keywords" content="NutzSite,NutzSite开源,NutzSite框架,NutzSite系统,NutzSite">
     <meta name="description" content="NutzSite基于nutzboot的权限管理系统 易读易懂、界面简洁美观。 核心技术采用nutz、nutzboot、Shiro没有任何其它重度依赖">
     <link href="../static/assets/css/bootstrap.min.css" th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet"/>
@@ -35,23 +35,23 @@
         <div class="col-sm-7">
             <div class="signin-info">
                 <div class="logopanel m-b">
-                    <h1><img alt="[ NutzSite ]" src="../static/nutzsite.png" th:src="@{/nutzsite.png}"></h1>
+                    <h1><img  src="../static/nutzsite.png" th:src="@{/nutzsite.png}"></h1>
                 </div>
-                <div class="m-b"></div>
-                <h4>欢迎使用 <strong>NutzSite 后台管理系统</strong></h4>
-                <ul class="m-b">
-                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Nutzboot</li>
-                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Shiro</li>
-                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Thymeleaf</li>
-                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Bootstrap</li>
-                </ul>
-                <strong>还没有账号？ <a href="#">立即注册&raquo;</a></strong>
+                <!--<div class="m-b"></div>-->
+                <!--<h4>欢迎使用 <strong>NutzSite 后台管理系统</strong></h4>-->
+                <!--<ul class="m-b">-->
+                    <!--<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Nutzboot</li>-->
+                    <!--<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Shiro</li>-->
+                    <!--<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Thymeleaf</li>-->
+                    <!--<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Bootstrap</li>-->
+                <!--</ul>-->
+                <!--<strong>还没有账号？ <a href="#">立即注册&raquo;</a></strong>-->
             </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5" id="logindiv">
             <form id="signupForm">
                 <h4 class="no-margins">登录：</h4>
-                <p class="m-t-md">做个开发框架</p>
+                <!--<p class="m-t-md">做个开发框架</p>-->
                 <input type="hidden" name="pubkey" class="form-control uname" placeholder="pubKey" th:value="${pubkey}"/>
                 <input type="text" name="username" class="form-control uname" placeholder="用户名" value="admin"/>
                 <input type="password" name="password" class="form-control pword" placeholder="密码" value="123456"/>

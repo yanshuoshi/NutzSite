@@ -12,4 +12,8 @@ import io.nutz.nutzsite.module.test.models.Checkpoint;
 public interface CheckpointService extends BaseService<Checkpoint> {
 
     Object home(String id);
+
+    Object number(String id);
+
+
 }

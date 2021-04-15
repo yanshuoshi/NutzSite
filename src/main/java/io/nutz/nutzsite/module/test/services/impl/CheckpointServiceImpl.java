@@ -43,4 +43,25 @@ public class CheckpointServiceImpl extends BaseServiceImpl<Checkpoint> implement
         List<Map> list = sql.getList(Map.class);
         return new TableDataInfo(list, 0);
     }
+
+    @Override
+    public Object number(String id) {
+        String sqlstr = "SELECT " +
+                "  (SELECT " +
+                "    COUNT(1) " +
+                "  FROM" +
+                "    zw_alertinfo " +
+                "  WHERE TO_DAYS(create_time) = TO_DAYS(NOW()) and obj_id = @id) AS todaycount," +
+                "  (SELECT " +
+                "    COUNT(1) " +
+                "  FROM" +
+                "    zw_alertinfo where 1 = 1  and obj_id = @id) AS allcount  " +
+                "";
+        Sql sql = Sqls.create(sqlstr);
+        sql.params().set("id", id);
+        sql.setCallback(Sqls.callback.maps());
+        dao().execute(sql);
+        List<Map> list = sql.getList(Map.class);
+        return new TableDataInfo(list, 0);
+    }
 }

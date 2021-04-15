@@ -6,54 +6,54 @@
     
      <div class="container-div">
 		<div class="row">
-			<div class="col-sm-12 search-collapse">
-				<form id="formId">
-					<div class="select-list">
-						<ul>
-							<li>
-								创建人：<input type="text" name="createBy"/>
-							</li>
+			<!--<div class="col-sm-12 search-collapse">-->
+				<!--<form id="formId">-->
+					<!--<div class="select-list">-->
+						<!--<ul>-->
+							<!--<li>-->
+								<!--创建人：<input type="text" name="createBy"/>-->
+							<!--</li>-->
 
-							<li>
-								创建日期：<input type="text" name="createTime"/>
-							</li>
+							<!--<li>-->
+								<!--创建日期：<input type="text" name="createTime"/>-->
+							<!--</li>-->
 
-							<li>
-								更新人：<input type="text" name="updateBy"/>
-							</li>
+							<!--<li>-->
+								<!--更新人：<input type="text" name="updateBy"/>-->
+							<!--</li>-->
 
-							<li>
-								更新日期：<input type="text" name="updateTime"/>
-							</li>
+							<!--<li>-->
+								<!--更新日期：<input type="text" name="updateTime"/>-->
+							<!--</li>-->
 
-							<li>
-								所属部门：<input type="text" name="sysOrgCode"/>
-							</li>
+							<!--<li>-->
+								<!--所属部门：<input type="text" name="sysOrgCode"/>-->
+							<!--</li>-->
 
-							<li>
-								监测对象名称：<input type="text" name="objectName"/>
-							</li>
+							<!--<li>-->
+								<!--监测对象名称：<input type="text" name="objectName"/>-->
+							<!--</li>-->
 
-							<li>
-								监测对象简介：<input type="text" name="objectDesc"/>
-							</li>
+							<!--<li>-->
+								<!--监测对象简介：<input type="text" name="objectDesc"/>-->
+							<!--</li>-->
 
-							<li>
-								设备照片：<input type="text" name="objectPic"/>
-							</li>
+							<!--<li>-->
+								<!--设备照片：<input type="text" name="objectPic"/>-->
+							<!--</li>-->
 
-							<li>
-								监测对象编码：<input type="text" name="objectCode"/>
-							</li>
+							<!--<li>-->
+								<!--监测对象编码：<input type="text" name="objectCode"/>-->
+							<!--</li>-->
 
-							<li>
-								<a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
-								<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
-							</li>
-						</ul>
-					</div>
-				</form>
-			</div>
+							<!--<li>-->
+								<!--<a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>-->
+								<!--<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>-->
+							<!--</li>-->
+						<!--</ul>-->
+					<!--</div>-->
+				<!--</form>-->
+			<!--</div>-->
 			
 	        <div class="btn-group-sm hidden-xs" id="toolbar" role="group">
 				<a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="test:jcobject:add">
@@ -97,31 +97,31 @@
 					title : '主键',
 					visible: false
 				},
-				{
-					field : 'createBy', 
-					title : '创建人',
-					sortable: true
-				},
-				{
-					field : 'createTime', 
-					title : '创建日期',
-					sortable: true
-				},
-				{
-					field : 'updateBy', 
-					title : '更新人',
-					sortable: true
-				},
-				{
-					field : 'updateTime', 
-					title : '更新日期',
-					sortable: true
-				},
-				{
-					field : 'sysOrgCode', 
-					title : '所属部门',
-					sortable: true
-				},
+				// {
+				// 	field : 'createBy',
+				// 	title : '创建人',
+				// 	sortable: true
+				// },
+				// {
+				// 	field : 'createTime',
+				// 	title : '创建日期',
+				// 	sortable: true
+				// },
+				// {
+				// 	field : 'updateBy',
+				// 	title : '更新人',
+				// 	sortable: true
+				// },
+				// {
+				// 	field : 'updateTime',
+				// 	title : '更新日期',
+				// 	sortable: true
+				// },
+				// {
+				// 	field : 'sysOrgCode',
+				// 	title : '所属部门',
+				// 	sortable: true
+				// },
 				{
 					field : 'objectName', 
 					title : '监测对象名称',
