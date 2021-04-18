@@ -54,19 +54,22 @@ public class CheckpointController {
 					   @Param("beginTime") Date beginTime,
 					   @Param("endTime") Date endTime,
 					   @Param("orderByColumn") String orderByColumn,
-					   @Param("isAsc") String isAsc,
+                       @Param("isAsc") String isAsc,
+                       @Param("objId") String objId,
 					   HttpServletRequest req) {
-		Cnd cnd = Cnd.NEW();
-		if (!Strings.isBlank(name)){
-			//cnd.and("name", "like", "%" + name +"%");
-		}
-		if(Lang.isNotEmpty(beginTime)){
-			cnd.and("create_time",">=", beginTime);
-		}
-		if(Lang.isNotEmpty(endTime)){
-			cnd.and("create_time","<=", endTime);
-		}
-		return checkpointService.tableList(pageNum,pageSize,cnd,orderByColumn,isAsc,null);
+	    Logs.get().info("objId:" + objId);
+//		Cnd cnd = Cnd.NEW();
+//		if (!Strings.isBlank(name)){
+//			//cnd.and("name", "like", "%" + name +"%");
+//		}
+//		if(Lang.isNotEmpty(beginTime)){
+//			cnd.and("create_time",">=", beginTime);
+//		}
+//		if(Lang.isNotEmpty(endTime)){
+//			cnd.and("create_time","<=", endTime);
+//		}
+//        return checkpointService.tableList(pageNum,pageSize,cnd,orderByColumn,isAsc,null);
+        return checkpointService.tableList(pageNum,pageSize,objId);
 	}
 
 	/**

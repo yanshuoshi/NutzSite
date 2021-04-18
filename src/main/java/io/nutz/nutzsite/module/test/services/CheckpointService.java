@@ -15,5 +15,6 @@ public interface CheckpointService extends BaseService<Checkpoint> {
 
     Object number(String id);
 
+    Object tableList(int pageNum,int pageSize,String objId);
 
 }

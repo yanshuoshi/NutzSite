@@ -55,18 +55,21 @@ public class MonitorController {
 					   @Param("endTime") Date endTime,
 					   @Param("orderByColumn") String orderByColumn,
 					   @Param("isAsc") String isAsc,
+                       @Param("objId") String objId,
+                       @Param("ckpId") String ckpId,
 					   HttpServletRequest req) {
 		Cnd cnd = Cnd.NEW();
-		if (!Strings.isBlank(name)){
-			//cnd.and("name", "like", "%" + name +"%");
-		}
-		if(Lang.isNotEmpty(beginTime)){
-			cnd.and("create_time",">=", beginTime);
-		}
-		if(Lang.isNotEmpty(endTime)){
-			cnd.and("create_time","<=", endTime);
-		}
-		return monitorService.tableList(pageNum,pageSize,cnd,orderByColumn,isAsc,null);
+//		if (!Strings.isBlank(name)){
+//			//cnd.and("name", "like", "%" + name +"%");
+//		}
+//		if(Lang.isNotEmpty(beginTime)){
+//			cnd.and("create_time",">=", beginTime);
+//		}
+//		if(Lang.isNotEmpty(endTime)){
+//			cnd.and("create_time","<=", endTime);
+//		}
+//        return monitorService.tableList(pageNum,pageSize,cnd,orderByColumn,isAsc,null);
+        return monitorService.tableList(pageNum,pageSize,objId,ckpId);
 	}
 
 	/**

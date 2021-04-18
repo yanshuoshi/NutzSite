@@ -11,4 +11,6 @@ import io.nutz.nutzsite.module.test.models.Monitor;
  */
 public interface MonitorService extends BaseService<Monitor> {
 
+
+    Object tableList(int pageNum,int pageSize,String objId,String ckpId);
 }
